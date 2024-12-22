@@ -85,11 +85,11 @@ public class StudentLeave extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e){
         if(e.getSource()==submit){
-            String rollNo = choiceRollNo.getSelectedItem();
+            String rollno = choiceRollNo.getSelectedItem();
             String date = ((JTextField) selDate.getDateEditor().getUiComponent()).getText();
             String time = choTime.getSelectedItem();
 
-            String Q = "insert into studentLeave values('"+rollNo+"','"+date+"','"+time+"')";
+            String Q = "insert into studentLeave values('"+rollno+"','"+date+"','"+time+"')";
 
             try{
                Conn c= new Conn();

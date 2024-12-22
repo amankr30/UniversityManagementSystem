@@ -163,15 +163,15 @@ public class UpdateTeacher extends JFrame implements ActionListener {
             while (resultSet.next()){
                 textName.setText(resultSet.getString("name"));
                 textfather.setText(resultSet.getString("fname"));
+                empText.setText(resultSet.getString("empID"));
                 dobdob.setText(resultSet.getString("dob"));
                 textAddress.setText(resultSet.getString("address"));
                 textPhone.setText(resultSet.getString("phone"));
                 textemail.setText(resultSet.getString("email"));
-                textM10.setText(resultSet.getString("class_x"));
-                textM12.setText(resultSet.getString("class_xii"));
+                textM10.setText(resultSet.getString("x"));
+                textM12.setText(resultSet.getString("xii"));
                 textAadhar.setText(resultSet.getString("aadhar"));
-                empText.setText(resultSet.getString("empId"));
-                textcourse.setText(resultSet.getString("education"));
+                textcourse.setText(resultSet.getString("course"));
                 textbranch.setText(resultSet.getString("department"));
             }
 
@@ -197,7 +197,7 @@ public class UpdateTeacher extends JFrame implements ActionListener {
                         textM12.setText(resultSet.getString("class_xii"));
                         textAadhar.setText(resultSet.getString("aadhar"));
                         empText.setText(resultSet.getString("empId"));
-                        textcourse.setText(resultSet.getString("education"));
+                        textcourse.setText(resultSet.getString("course"));
                         textbranch.setText(resultSet.getString("department"));
                     }
                 }catch (Exception E){
